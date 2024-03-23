@@ -1,25 +1,30 @@
 Niall's Adventure Game
 
-* Sections:
-1. Introduction
-    a. Theme -- who's making the decisions? (hint: not you)
-2. World-building
-    a. Factions
-    b. Races and Creatures
-    c. World map overview
-    d. Mechanics
-        i. Attunement
-        ii. Saturation
-        iii. Death
-        iv. Domains
-        v. Magics
-    e. Politics
-3. Character Creation
-    a. Classes
-    b. Races
-    c. Skills
-    d. Levels
-4. Progression
-5. Gameplay
-6. Game Running
-7. Style Guide
+## Sections:
+1. [Introduction](1_introduction.md)
+    1. [Theme]()
+2. [World-building](2_world-building.md)
+    1. [Factions](2a_factions.md)
+    2. [Races and Creatures](2b_races-and-creatures.md)
+    3. [World map overview](2c_world-map-overview.md)
+    4. [Mechanics](2d_mechanics.md)
+        1. [Color](2di_color.md)
+        2. [Attunement](2dii_attunement.md)
+        3. [Saturation](2diii_saturation.md)
+        4. [Domains](2div_domains.md)
+        5. [Death](2dv_death.md)
+        6. [Magics](2dvi_magics.md)
+    5. [Politics](2e_politics.md)
+3. [Character Creation](3_character_creation.md)
+    1. [Stats](3a_stats.md)
+    2. [Races](3b_races.md)
+    3. [Classes](3c_classes.md)
+    4. [Levels](3d_levels.md)
+    5. [Color](3e_color.md)
+4. [Progression](4_progression.md)
+5. [Gameplay](5_gameplay.md)
+    1. [Combat](5a_combat.md)
+    2. [Puzzle](5b_puzzle.md)
+    3. [Non-combat](5c_noncombat.md)
+6. [Game Running](6_game-running.md)
+7. [Style Guide](7_style-guide.md)
