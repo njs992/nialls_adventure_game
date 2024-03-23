@@ -40,16 +40,20 @@ The persuasive capabilities of Command are for those who see value in intellectu
 ### Defense [DEF]
 Defense applies to all physical attacks. It is the value that an incoming attack roll must match or exceed in order to land a hit.
 Defense is calculated as follows:
+
 |(Agility Statistic) - (Agility Bonus)|
+
 Examples: An Agility statistic of 14 will result in an Agility bonus of +1 and a defense of 14 - 1, 13. A terrible Agility statistic of 6 gives a bonus of -2 and a defense of 6 - (-2), 8.
 
 ### Fortitude [FOR]
 Defense applies to all non-physical or magical attacks. Just like defense, t is the value that an incoming non-physical or magical attack roll must match or exceed in order to land a hit.
 Likewise, fortitude is calculated in the same way except using the Heartiness statistic.
+
 |(Heartiness Statistic) - (Heartiness Bonus)|
 
 ### Speed [SPD]
 Speed refers to how far a character can move during a turn of combat. Speed is only affected by status effects and racial or class traits.
+
 |Base Speed is 6|
 
 ### Fight, Skill, and Soul [F, K, S]

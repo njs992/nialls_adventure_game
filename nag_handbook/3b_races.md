@@ -32,12 +32,14 @@ Fast to Learn
 Monster Strength
 - As opposed to an ability, this is a trait. Permanently increase the Power stat. For each point added to Power, a point from another stat must be deducted as follows in the table. Note: to take this racial power, a Power-based class must be chosen.
 - Permanent trait.
+
 |+POW|-other|
 |---|---|
 |1-3|-1 per|
 |4-5|-2 per|
 |6-7|-3 per|
 |8+|-4 per|
+
 Environmental Neutralization
 - Neutralize an environmental hazard. This may be a surface condition or an air condition. The condition will no longer give any negative or positive effects.
 - Full action, single use.
@@ -64,12 +66,14 @@ Channel Influence
 Key Weakness
 - The player character takes a permanent key weakness in exchange for a great boon. Weaknesses and boons are outlined in the following table.
 - Permanent trait.
+
 |Name|Weakness|Boon|
 |---|---|---|
 |Weak Leg|Speed - 2|Ranged attacks have a +1 to hit and deal +1 damage.|
 |Blind Eye|Attenuated observation checks|Melee attacks have a +1 to hit and deal +1 damage.|
 |Lame Hand|All attacks have -1 to hit. Damage rolls of 1 do no damage.|S+ for better magics usage|
 |Consumption|At the beginning of every game, must take a HRT check. Temporarily lose boon on failure. Upon critical failure, the character dies.|All stealth-related checks are boosted. When near a player or non-player character at the time of death, recover 3 health points.|
+
 Heightened Senses
 - The character cannot be surprised. Combat initiative rolls and physical trap related checks gain +3.
 - Permanent trait.
