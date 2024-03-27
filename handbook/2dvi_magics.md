@@ -1,6 +1,7 @@
 # Magics
 
 The magics are the supernatural forces that can be bound and controlled. Magics are best conceptualized as physical concepts that we expect to behave based on "natural law" but are actually ebbings and flowings of magical forces. For example, gravitational attraction seems like something that happens naturally but to the student of the magics it is understood as the balance held by great magisters and rulers, such as the Sun or the Earth, each obeying their greaters and executing within their granted region. Control over the magics is robbing the natural order and shaping the flow of magics to fulfill needs of the user.
+
 Methods are detailed below but magics usage is outlined in [Gameplay](5_gameplay.md).
 
 ## Schools of Magics

@@ -17,19 +17,27 @@ This is your simple actions and standard attacks. These categories include item 
 
 #### Simple Actions
 Drinking a potion.
+
 Equipping an inventory item.
+
 Skill checks, such as for footing on uncertain ground or jumping from a height.
+
 Prepare a magics method.
+
 
 #### Standard Attacks
 One-handed Attack
 * POW roll against DEF. Damage dealt based on weapon stats.
+
 Ranged Attack
 * HRT roll against DEF. Damage dealt based on weapon stats.
+
 Unarmed Attack
 * AGY roll against DEF. 1 damage dealt.
+
 Simple Dart of Magics
 * CMD roll against FOR. Damage dealt based on Soul.
+
 Lock (initiate grapple)
 * AGY roll against AGY. Initiates grappling. Grappling engagement rules are listed in a section below.
 

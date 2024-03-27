@@ -17,6 +17,7 @@ The breakdown of the list below is as follows:
 Second Wind
 - When receiving damage that would otherwise down a player character, the player character may instead choose to be reduced to 1 health point and gain an additional F+, K+, and S+ for the rest of combat. Upon exiting combat, take 1 damage.
 - Free action, single use.
+
 Fast to Learn
 - After rolling a critical success or failure during a non-combat skill check, the player character may choose to learn this skill. Learning this skill results in permanently rolling boosted on this or analogous skill checks. On subsequent uses of this power, the learned skill is replaced.
 - Full action, single use.
@@ -53,6 +54,7 @@ Environmental Neutralization
 |HRT|-1|
 
 Ward Danger
+
 Channel Influence
 
 ## Wayward
@@ -87,4 +89,5 @@ Heightened Senses
 |HRT|-1|
 
 Duplicate Item
+
 Duplicate Person
