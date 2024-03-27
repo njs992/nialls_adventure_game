@@ -10,6 +10,9 @@
 * Twine-based interactive character creator/game introduction
 * Play testing :)
 
+## Maybe start with the Handbook
+Found [here](handbook/0_nialls-adventure-game.md)!
+
 ## What's Niall's Adventure Game?
 Niall's Adventure Game (NAG?) is a table-top adventure game, formed from the ideas that the creator, Niall, got while playing other table-top adventure games! These include things like Dungeons and Dragons 5e, Pathfinder, and Baldur's Gate 3, as well as some friend-made games such as Castle Adventure. 
 

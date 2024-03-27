@@ -1,4 +1,4 @@
-Niall's Adventure Game
+# Niall's Adventure Game
 
 ## Sections:
 1. [Introduction](1_introduction.md)
