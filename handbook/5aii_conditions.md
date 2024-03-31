@@ -40,6 +40,18 @@ Critical successes on condition checks immediately remove the condition. Critica
 
 - The grappler may be targeted, unhindered, by aids and attacks.
 
+#### Bleeding
+
+#### Stunned
+
+#### Stuck
+
+- Something about the character being restricted to one space in combat and maybe being easier to hit.
+
+#### Slowed
+
+- Can't use reflex actions
+
 ## Permanent Conditions
 
 ### Injury
