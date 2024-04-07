@@ -44,13 +44,25 @@ Critical successes on condition checks immediately remove the condition. Critica
 
 #### Stunned
 
-#### Stuck
+#### Dazed
+
+#### Pinned
 
 - Something about the character being restricted to one space in combat and maybe being easier to hit.
 
 #### Slowed
 
 - Can't use reflex actions
+
+#### Hampered
+
+- 1 damage for each stride moved.
+
+#### Frightened
+
+#### Poison
+
+#### Hooked
 
 ## Permanent Conditions
 
@@ -82,7 +94,7 @@ When certain checks are failed by a high enough margin, you will take gain a per
 |11|---|Combat order roll is automatically 2. Must still roll for critical failures or successes.|
 |12|---|Lose 30% of maximum health points.|
 |13|---|No longer recover health from natural-based methods, e.g. foods and brews.|
-|14|---|Lose 1 partial action.|
+|14|Fractured Wrist|Lose 1 partial action.|
 |15|---|All checks during reflex actions are made with attenuated rolls.|
 |16|---|Inventory reduced to 4 spaces.|
 |17|---|Take 3 damage any time stairs, ladders, or any similar device is used.|
