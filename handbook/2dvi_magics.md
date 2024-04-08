@@ -21,7 +21,7 @@ Maybe example?
 
 ### School of Alchemy
 
-Can water turn to gold? The student in the School of Alchemy seeks the answer. Transmutation, potions, and poisons come from these students, making it a socially highly acceptable and financially highly lucrative discipline. 
+Can water turn to gold? The student in the School of Alchemy seeks the answer. Transmutation, potions, and poisons come from these students, making it a socially highly acceptable and financially highly lucrative discipline.
 
 ### School of Psyche
 
