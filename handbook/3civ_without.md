@@ -1,4 +1,12 @@
-## Without Classes
+# Without Classes
+
+## Primary Directive
+
+## Magics Command
+
+Song
+
+## Class Tree
 
 Witch Doctor - HCAP - K++ - path to radicalism
 

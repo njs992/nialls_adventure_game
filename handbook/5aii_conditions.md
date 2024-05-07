@@ -20,6 +20,20 @@ Critical successes revert the check level to 1. Critical failures on condition c
 |4|15|
 |5|20|
 
+#### Buffed
+
+#### Sturdy
+
+#### Braced
+
+#### Focused
+
+#### Balanced
+
+#### Bloodlust
+
+#### Encouraged
+
 ### Negative Conditions
 
 Critical successes on condition checks immediately remove the condition. Critical failures revert the check level to 1.
@@ -64,6 +78,8 @@ Critical successes on condition checks immediately remove the condition. Critica
 
 #### Hooked
 
+#### Scared
+
 ## Permanent Conditions
 
 ### Injury
@@ -104,4 +120,4 @@ When certain checks are failed by a high enough margin, you will take gain a per
 
 ### Magical Malady
 
-a
+### Boons

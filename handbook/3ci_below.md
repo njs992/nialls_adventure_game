@@ -1,17 +1,5 @@
 # Below Classes
 
-Miner      - PHAC - F++ - Path to fanaticism
-
-Brawler    - PCAH - F+  - 
-
-Sapper     - PAHC - K++ - 
-
-Trainer    - PCHA - K+  - 
-
-Undertaker - PHCA - S++ - 
-
-Burrower   - PACH - S+  - Elementalist who mines
-
 Purple was the earliest seen color. When the humans emerged from their gray-scale views the first thing they saw was death, darkness, and dankness in their caves and hovel shelters. This grim outlook revealed the color purple to their eyes.
 
 It's only fitting that the first of the others that they met were the ghouls. The ghouls live and thrive with purple. They were born in it, they have been shaped by it, and they follow it.
@@ -49,7 +37,6 @@ Explanation of instrument stats:
   - Plucked instruments require picking or strumming by hand. AGY checks used.
   - Percussion instruments are beaten in some manner. POW checks used.
   - Operated instruments have a special mechanism to play them, such as a crank or a bow. CMD checks used.
-- Duration of power.
 - Magics resonance, the school of magics most compatible with the instrument.
 
 |Flute|
@@ -57,4 +44,72 @@ Explanation of instrument stats:
 |A simple woodwind.|
 |Light|
 |Breath|
-|2x HRT bonus|
+||
+
+|Guitar|
+|---|
+|descr|
+|Heavy|
+|Plucked|
+
+|Hand Drum|
+|---|
+|descr|
+|Light|
+|Percussion|
+
+|Hurdy-Gurdy|
+|---|
+|descr|
+|Heavy|
+|Operated|
+
+## Class Tree
+
+Miner      - PHAC - F++ - Path to fanaticism
+
+Undertaker - PHCA - S++
+
+Burrower   - PACH - S+  - Elementalist who mines
+
+Sapper     - PAHC - K++
+
+Trainer    - PCHA - K+
+
+Brawler    - PCAH - F+
+
+### Skill Brainstorming
+
+#### Miner
+
+Miner description:
+
+I think the miner should be kind of a basic worker.
+
+- Tool Proficiency, trait -- Skilled use of any tool that doubles as a weapon. E.g. Axe, Hammer, Pick. Idk maybe an attack check bonus or maybe some extra damage?
+
+- Chop, attack -- Special attack with tool-type weapons. Inflicts a condition, doubles as a way to chop doors or trees, etc.
+
+- Bone-shatter, attack -- Major damage and condition on attack
+
+- Knock back
+
+#### Undertaker
+
+- 
+
+#### Burrower
+
+#### Sapper
+
+- Undermine
+
+- Sabotage
+
+#### Trainer
+
+#### Brawler
+
+#### unsorted
+
+- - 

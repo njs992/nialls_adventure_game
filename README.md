@@ -4,8 +4,9 @@
 
 - Character sheets
 - Finish the handbook
-  - Weapons
   - Classes
+    - Class trees
+  - Combat details
   - Creatures
   - so much left...
 - Twine-based interactive character creator/game introduction
@@ -25,7 +26,11 @@ Big question! We'll dip into a handful of the main selling points, but further d
 
 ### Gameplay
 
-The gameplay of NAG is intended to be a driving experience in both role-playing and combat situations. In role-playing situations, rewards and punishments will be given for player behavior. These are based on the certain character attributes that are assigned during character creation and explicitly lined out. Combat, too, has explicit responses to things such as critical success and failures. Further, combat is designed and streamlined to be a faster-moving turn based system, focused on player engagement throughout the turn cycle.
+The gameplay of NAG is intended to be a driving experience in both role-playing and combat situations. In role-playing situations, rewards and punishments will be given for player behavior. These are based on the certain character attributes that are assigned during character creation and explicitly lined out.
+
+Classes and leveling are based on class trees, allowing for blending similar classes or maximizing one class's power. Each level is balanced to allow for satisfying power increase.
+
+Combat has explicit responses to things such as critical success and failures. Further, combat is designed and streamlined to be a faster-moving turn based system, focused on player engagement throughout the turn cycle. This includes a versitile reflex system and many temporary conditions.
 
 ### Narrative World
 

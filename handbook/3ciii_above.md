@@ -1,4 +1,12 @@
-## Above Classes
+# Above Classes
+
+## Primary Directive
+
+## Magics Command
+
+Written
+
+## Class Tree
 
 Cleric     - CHPA - F++ - Path to zealotry
 
@@ -11,4 +19,3 @@ Protector  - CPHA - K+  - pseudo paladin
 Soothsayer - CAHP - S++ - calming powers
 
 Exorcist   - CAPH - S+  - anti-evilness
-

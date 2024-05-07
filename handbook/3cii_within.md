@@ -1,4 +1,12 @@
-## Within Classes
+# Within Classes
+
+## Primary Directive
+
+## Magics Command
+
+Preformed
+
+## Class Tree
 
 Watcher  - APHC - K++ - path to extremism
 
@@ -11,4 +19,3 @@ Rogue    - AHCP - F+  -
 Psychic  - ACHP - S++ - 
 
 Forger   - ACPH - S+  - 
-

@@ -2,7 +2,7 @@
 
 Leveling a character can be achieved through various paths and brings many benefits.
 
-Leveling in Niall's Adventure Game is simple and consistent, provides relatively small power boosts, and player characters are limited to 4 levels. Generally, power doubles between levels 1 and 4. Levels 5-7 are reserved for non-player characters.
+Leveling in Niall's Adventure Game is simple and consistent, provides relatively small power boosts, and player characters are limited to 4 levels. Generally, a 3 level difference will lead to one-hit kills. Levels 5-7 are reserved for non-player characters.
 
 ## General Level-up
 
