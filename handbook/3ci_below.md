@@ -66,17 +66,17 @@ Explanation of instrument stats:
 
 ## Class Tree
 
-Miner      - PHAC - F++ - Path to fanaticism
+Miner      - PHAC - F++ - Path to fanaticism - special ( POW ) - builds the physical
 
-Undertaker - PHCA - S++
+Undertaker - PHCA - S++ - mage - guides the dead
 
-Burrower   - PACH - S+  - Elementalist who mines
+Guardian   - PACH - S+  - Elementalist who mines - melee - best defence is a good offence
 
-Sapper     - PAHC - K++
+Sapper     - PAHC - K++ - range replacement trap setter - no range
 
-Trainer    - PCHA - K+
+Trainer    - PCHA - K+ - charisma - pumps up
 
-Brawler    - PCAH - F+
+Brawler    - PCAH - F+ - alt (melee)
 
 ### Skill Brainstorming
 

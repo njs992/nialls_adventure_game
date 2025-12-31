@@ -20,7 +20,7 @@ The breakdown of the list below is as follows:
 Second Wind
 
 - When receiving damage that would otherwise down a player character, the player character may instead choose to be reduced to 1 health point and gain an additional F+, K+, and S+ for the rest of combat. Upon exiting combat, take 1 damage.
-- Free action, single use.
+- Null action, single use.
 
 Fast to Learn
 

@@ -1,3 +1,11 @@
+[Back to Gameplay](5_gameplay.md)
+
+Go to sub-sections:
+
+1. [Standard Weapons](5ai_standard_weapons.md)
+2. [Conditions](5aii_conditions.md)
+3. [Special Combat](5aiii_special_combat.md)
+
 # Combat
 
 Combat is run on a turn-by-turn basis. Each playerA turn during combat may be comprised of multiple parts: full actions, partial actions, null actions, movement, and reflex.
@@ -22,7 +30,7 @@ Most big attacks belong to specific classes. There are only two standard big att
 
 - Executing a takedown to initiate grapple. Grappling engagement rules are listed in the [special combat](5aiii_special_combat.md) section. Upon a success, act as though a Throw was successfully executed. If the attacker has the Grappler trait, the defender receives the Stunned condition.
 
-## Partial Action
+## Quick Action
 
 This is your simple actions and standard attacks. These categories include item usage, most class abilities, equipping, and combat-time skill checks.
 
@@ -92,7 +100,7 @@ As an opponent within melee range makes any ranged attack or takes a simple or a
 
 #### Prepared Attack
 
-As an opponent moves into range, make a standard attack against them. This requires a partial action from the player character's last turn to be kept for this reason. Any standard attack may be prepared.
+As an opponent moves into range, make a standard attack against them. This requires a quick action from the player character's last turn to be kept for this reason. Any standard attack may be prepared.
 
 #### Counter-punch
 

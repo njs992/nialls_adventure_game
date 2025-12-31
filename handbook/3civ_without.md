@@ -8,14 +8,14 @@ Song
 
 ## Class Tree
 
-Witch Doctor - HCAP - K++ - path to radicalism
+Shaman - HCAP - K++ - path to radicalism - special ( HRT ) - transverses the spiritual
 
-Hunter       - HPAC - K+  - 
+Hunter       - HPAC - K+  - ranged - find something in nature
 
-Guide        - HCPA - F++ - 
+Guide        - HCPA - F++ - charisma - physical fortitude
 
-Warlord      - HPCA - F+  - 
+Warlord      - HPCA - F+  - melee - strength in numbers
 
-Elementalist - HAPC - S++ - 
+Sky Caller - HAPC - S++ - mage - create storms without
 
-Herbalist    - HACP - S+  - 
+Herbalist    - HACP - S+  - alt ( alchemist )

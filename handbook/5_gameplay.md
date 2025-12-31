@@ -6,8 +6,10 @@ This section will go over the many aspects of gameplay. The primary topics here 
     1. [Standard Weapons](5ai_standard_weapons.md)
     2. [Conditions](5aii_conditions.md)
     3. [Special Combat](5aiii_special_combat.md)
-2. [Puzzle](5b_puzzle.md)
-3. [Non-combat](5c_noncombat.md)
+2. [Magics](5b_magics.md)
+3. [Puzzle](5c_puzzle.md)
+4. [Non-combat](5d_noncombat.md)
+    1. [Subtle Skills](5di_subtle_skills.md)
 
 ## General Gameplay Mechanics and Terms
 

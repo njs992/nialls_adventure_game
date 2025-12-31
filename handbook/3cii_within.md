@@ -8,14 +8,14 @@ Preformed
 
 ## Class Tree
 
-Watcher  - APHC - K++ - path to extremism
+Watcher  - APHC - K++ - path to extremism - special ( AGY ) - transverses the physical
 
-Cutpurse - APCH - K+  - 
+Cutpurse - APCH - K+  - melee - find something in society
 
-Monk     - AHPC - F++ - 
+Monk     - AHPC - F++ - charisma - spiritual fortitude
 
-Rogue    - AHCP - F+  - 
+Rogue    - AHCP - F+  - range - strength as one
 
-Psychic  - ACHP - S++ - 
+Psychic  - ACHP - S++ - mage - create storms within
 
-Forger   - ACPH - S+  - 
+Forger   - ACPH - S+  - alt (mage)

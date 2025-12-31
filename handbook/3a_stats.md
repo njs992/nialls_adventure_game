@@ -46,6 +46,7 @@ Defense applies to all physical attacks. It is the value that an incoming attack
 Defense is calculated as follows:
 
 |(Agility Statistic) - (Agility Bonus)|
+|---|
 
 Examples: An Agility statistic of 14 will result in an Agility bonus of +1 and a defense of 14 - 1, 13. A terrible Agility statistic of 6 gives a bonus of -2 and a defense of 6 - (-2), 8.
 
@@ -55,17 +56,31 @@ Defense applies to all non-physical or magical attacks. Just like defense, t is 
 Likewise, fortitude is calculated in the same way except using the Heartiness statistic.
 
 |(Heartiness Statistic) - (Heartiness Bonus)|
+|---|
 
 ### Speed [SPD]
 
 Speed refers to how far a character can move during a turn of combat. Speed is only affected by status effects and racial or class traits.
 
 |Base Speed is 6|
+|---|
 
-### Fight, Skill, and Soul [F, K, S]
+<!-- ### Fight, Skill, and Soul [F, K, S] <REPLACE WITH MIGHT!>
 
 Fight is a special bonus from classes that will give additional bonus in combat and survival situations. Similarly, Skill gives bonuses in non-combat and puzzle situations. Soul is a bonus applied to control of magics and provides bonuses to magical attack method damage, magical recovery method healing, and a bonus for other magical method checks.
-This may be affected by uncommon special items and status effects, but is primarily affected by class selection. 
+This may be affected by uncommon special items and status effects, but is primarily affected by class selection.  -->
+
+### Might
+
+Might is the ability of a character to act. As Might increases, a character can combine more spells, attacks, or effects in order to augment power. Might is increased with progression in the class skill trees from 1 to a natural maximum of 3. Saturation and Attunement can give bonus Might as well as a Might penalty. When using Might, additional checks may need to be made such as Spellbinding.
+
+#### Spellbinding
+
+Spellbinding is a check based on the connected Magics. Each Magic will have a modifier statistic that defines the check target and roll.
+
+#### Combination Attack
+
+Using Might to string together attacks into a Combination Attack gives bonuses to each successive hit. Critical Failure at any point ends the Combination Attack, but normal failures just reset the Combination Attack bonus. The Combination Attack bonus adds extra damage range to the damage roll of the attack, or gives a direct bonus or penalty to the attack's check. Extra damage range is an additional die roll of 1d-bonus level. Check bonuses and penalties are just +/- bonus level, depending on whether the character or the target are making the check. In head-to-head checks, only the character gets the bonus and no penalty is given to the target.
 
 ## Stat Assignment
 

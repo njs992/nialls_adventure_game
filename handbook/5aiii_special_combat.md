@@ -1,3 +1,5 @@
+[Back to Combat](5a_combat.md)
+
 # Special Combat
 
 In some combat situations rules of engagement change and moves change. Outlined below are the situations and terms of these different engagement methods.
@@ -37,7 +39,7 @@ They don't know what's about to hit them. You approach, expertly grip their arm 
 - Upon success, add the affect of a successful throw.
 - If the attacker has the Grappler trait, the opponent recieves the Stunned condition.
 
-#### Lock, partial action
+#### Lock, quick action
 
 - AGY roll against AGY. Initiates grappling.
 
@@ -45,14 +47,14 @@ They don't know what's about to hit them. You approach, expertly grip their arm 
 
 A grapple will be broken immediately upon either involved character falling unconsious, paralyzed, or dead. Otherwise, a character may escape a grapple with the following actions.
 
-#### Slip, partial action
+#### Slip, quick action
 
 You are slippery. Using your superior quickness you slip out of their grip and quickly step out of arms reach to safety.
 
 - AGY roll against AGY. Ends grappling.
 - Select the position where you end up, opponent stands in place.
 
-#### Break, partial action
+#### Break, quick action
 
 They got you, but they underestimated your power. You overwhelm them and break their grip.
 
@@ -67,12 +69,12 @@ All grapple maneuvers use all of the characters actions. The only exception is i
 
 - POW roll against AGY.
 - Deal damage as though an unarmed attack landed.
-- If the opponent fails an AGY check, they gain the Prone condition.
+- If the opponent fails an AGY check, they gain the Down condition.
 
 #### Pin, standard action
 
 - AGY roll against AGY.
-- Opponent gains the Prone condition.
+- Opponent gains the Down condition.
 
 #### Choke, standard action
 

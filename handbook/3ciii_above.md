@@ -8,14 +8,14 @@ Written
 
 ## Class Tree
 
-Cleric     - CHPA - F++ - Path to zealotry
+Exorcist - CHPA - F++ - Path to zealotry - special ( CMD ) - guides the intellect
 
-Lieutenant - CPAH - F+  - Basic soldier leader
+Sentinal - CPAH - F+  - Basic soldier leader - ranged - excellent range
 
-Governer   - CHAP - K++ - Gains followers
+Governor   - CHAP - K++ - Gains followers - charisma - guides the living
 
-Protector  - CPHA - K+  - pseudo paladin
+Protector  - CPHA - K+  - pseudo paladin - melee - best defence is a good defence
 
-Soothsayer - CAHP - S++ - calming powers
+Soothsayer - CAHP - S++ - calming powers - mage - calms down
 
-Exorcist   - CAPH - S+  - anti-evilness
+Cleric   - CAPH - S+  - anti-evilness - alt ( Healer )

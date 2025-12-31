@@ -1,0 +1,890 @@
+{
+    "Foundation": {
+        "Power": {
+            "Yellow": {
+                "magic": "Yellow",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Purple",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Blue",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Orange",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Gray": {
+                "magic": "Gray",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Voice",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Tone",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Evoke",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Glyph",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Gray": {
+                "magic": "Will",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Above",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Beneath",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Without",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Within",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Gray": {
+                "magic": "Death",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Risen",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Ghoul",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Wayward",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Obser",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Gray": {
+                "magic": "Human",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    },
+
+    "Fauna": {
+        "Power": {
+            "Yellow": {
+                "magic": "Eagle",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Lizard",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Dog",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Beetle",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Falcon",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Snake",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Cat",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Fly",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Vulture",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Fish",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Rat",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Ant",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Crow",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Ray",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Fox",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Bee",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    },
+
+    "Flora": {
+        "Power": {
+            "Yellow": {
+                "magic": "Shrub",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Bean",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Fruit",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Mushroom",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Grass",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Seed",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Berry",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Mold",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Fern",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Root",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Vegetable",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Algae",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Tree",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Nut",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Herb",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Fungus",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    },
+
+    "Elemental": {
+        "Power": {
+            "Yellow": {
+                "magic": "Metal",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Stone",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Ice",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Earth",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Oil",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Magma",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Water",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Blood",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Ether",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Smoke",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Fog",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Air",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Moon",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Fire",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Acid",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Lightning",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    },
+
+    "Kinetic": {
+        "Power": {
+            "Yellow": {
+                "magic": "Force",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Transfer",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Enhance",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Enervate",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Hold",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Transmute",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Phase",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Charge",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Drop",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Materialize",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Repel",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Attune",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Raise",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Transmogrify",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Attract",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Shift",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    },
+
+    "Adjectival": {
+        "Power": {
+            "Yellow": {
+                "magic": "Slow",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Purple",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Dark",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Rich",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Fast",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Loud",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Dim",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Orange",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Still",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Alive",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Blue",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Pale",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Yellow",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Dead",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Bright",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Saturated",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    },
+
+    "Social": {
+        "Power": {
+            "Yellow": {
+                "magic": "Revile",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Learn",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Dream",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Hate",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Agility": {
+            "Yellow": {
+                "magic": "Confuse",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Intuit",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Whisper",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Doubt",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Heartiness": {
+            "Yellow": {
+                "magic": "Resolve",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Remind",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Vision",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Feel",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        },
+        "Command": {
+            "Yellow": {
+                "magic": "Persuade",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Purple": {
+                "magic": "Forget",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Blue": {
+                "magic": "Infer",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            },
+            "Orange": {
+                "magic": "Worship",
+                "invocation": "",
+                "tone": "",
+                "evocation": "",
+                "glyph": ""
+            }
+        }
+    }
+}

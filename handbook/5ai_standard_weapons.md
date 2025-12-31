@@ -1,3 +1,5 @@
+[Back to Combat](5a_combat.md)
+
 # Weapons
 
 ## Basic Weapons
@@ -60,7 +62,7 @@ Special ability
 |Unleash a burst of repeated quick jabs against the defenseless opponent.|
 |AGY roll against DEF|
 |On a successful hit, deal 1 damage and may repeat Quick Jab|
-|Partial action/unlimited use.|
+|Quick action/unlimited use.|
 
 |Hand-and-a-half Sword|
 |---|
