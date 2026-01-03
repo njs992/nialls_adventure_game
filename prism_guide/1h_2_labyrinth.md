@@ -62,6 +62,8 @@ The Beast Man rages in his domain.
 
 He is not summoned, the intruders may find him or he may find them.
 
+His love is power, his is disposed to Below.
+
 Hostile and combative attitude.
 
 If the intruders find the Beast Man at the dead end, they may fight or choose to run. The Beast Man follows the intruders. Each time the intruders move to a new room, so does he.
