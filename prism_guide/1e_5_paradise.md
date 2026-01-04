@@ -1,35 +1,15 @@
-# Floor Name
+# Paradise
 
-Description
-
-Explorer name
-
-Disposition
+Pilgrims in Paradise are never quite correct
 
 ## Layout
 
 ### Room details
 
-Room count and details
-
 ## Egress
 
-All doors explained
+## Puzzle:
 
-## Puzzle: Puzzle
+## Boss: The Carnivore Plant
 
-## Boss: Name
 
-Description
-
-Summon
-
-Disposition
-
-Attitude
-
-Interaction
-
-Provocation
-
-Defeat

@@ -1,4 +1,5 @@
 import random
+import curses
 
 LABYRINTH_SIZE = 6
 
@@ -352,7 +353,7 @@ def generate_room_map(size=LABYRINTH_SIZE, seed=None):
         final_layout = layout  # last attempt even if invalid
 
     # report validation result before printing the map
-    print("MAP PASSED TESTS" if valid else "MAP FAILED TESTS")
+    # print("MAP PASSED TESTS" if valid else "MAP FAILED TESTS")
     
     # -----------------------
     # Regenerate enemies/treasure (layout fixed) until constraints met
@@ -410,38 +411,68 @@ def generate_room_map(size=LABYRINTH_SIZE, seed=None):
     loot_info, loot_ok, loot_attempts = regen_loot_for_layout(final_layout, size, max_retries=25)
     final_layout['room_info'] = loot_info
     # optional report
-    print(f"LOOT PASSED TESTS" if loot_ok else f"LOOT FAILED TESTS after {loot_attempts} attempts")
+    # print(f"LOOT PASSED TESTS" if loot_ok else f"LOOT FAILED TESTS after {loot_attempts} attempts")
 
-    # Unpack layout for printing (layout fixed; loot updated)
-    specials = final_layout['specials']
-    edges = final_layout['edges']
-    open_passages = final_layout['open_passages']
-    loop_edges = final_layout['loop_edges']
-    horiz = final_layout['horiz']; vert = final_layout['vert']
-    horiz_open = final_layout['horiz_open']; vert_open = final_layout['vert_open']
-    horiz_loop_edge = final_layout['horiz_loop_edge']; vert_loop_edge = final_layout['vert_loop_edge']
-    loop_pos = final_layout['loop_pos']
-    room_info = final_layout['room_info']
+    return final_layout
 
-    # color helpers (ANSI)
-    RESET = "\033[0m"
-    BLUE = "\033[34m"
-    GREEN = "\033[32m"
-    RED = "\033[31m"
-    WHITE = "\033[37m"
-    WALL_CHARS = set("┌┐└┘┬┴┼├┤─│")
-    def color_char(ch):
-        if ch in WALL_CHARS:
-            return f"{BLUE}{ch}{RESET}"
-        if ch == 'L':
-            return f"{GREEN}{ch}{RESET}"
-        if ch in ('E','S','X'):
-            return f"{RED}{ch}{RESET}"
-        return f"{WHITE}{ch}{RESET}"
-    def colorize_str(s):
-        return "".join(color_char(ch) for ch in s)
+def interactive_map(stdscr, layout, size):
+    curses.curs_set(0)
+    curses.start_color()
+    curses.init_pair(1, curses.COLOR_BLUE, curses.COLOR_BLACK)  # walls
+    curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_BLACK)  # L
+    curses.init_pair(3, curses.COLOR_RED, curses.COLOR_BLACK)   # E S X
+    curses.init_pair(4, curses.COLOR_WHITE, curses.COLOR_BLACK)  # numbers
+    curses.init_pair(5, curses.COLOR_BLACK, curses.COLOR_YELLOW) # player highlight
+    curses.init_pair(6, curses.COLOR_BLACK, curses.COLOR_BLUE)   # blue highlight
+    curses.init_pair(7, curses.COLOR_BLACK, curses.COLOR_RED)    # boss highlight
 
-    # printing (larger rooms; loop doors shown adjacent to the wall symbol)
+    specials = layout['specials']
+    player_pos = specials['S'][0]
+    boss_pos = specials['E'][0]
+    selected = 'player'
+    blue_highlights = set()
+    blink_state = True
+
+    edges = layout['edges']
+    loop_edges = layout['loop_edges']
+    loop_pos = layout['loop_pos']
+
+    # compute loop marker positions and targets
+    loop_marker_to_target = {}
+    loop_edges_list = list(loop_edges)
+    if len(loop_edges_list) == 2:
+        edge1, edge2 = loop_edges_list
+        a1, b1 = edge1
+        a2, b2 = edge2
+        
+        # Find which endpoint has the marker for each edge
+        r_a1, c_a1 = _rc(a1, size)
+        r_b1, c_b1 = _rc(b1, size)
+        r_a2, c_a2 = _rc(a2, size)
+        r_b2, c_b2 = _rc(b2, size)
+        
+        marker1_idx = a1 if loop_pos[r_a1][c_a1] is not None else b1
+        marker2_idx = a2 if loop_pos[r_a2][c_a2] is not None else b2
+        
+        loop_marker_to_target[marker1_idx] = marker2_idx
+        loop_marker_to_target[marker2_idx] = marker1_idx
+
+    room_info = layout['room_info'][:]
+
+    cell_w = 7
+    pad_line = " " * cell_w
+    def pad_with(text):
+        return text.center(cell_w)
+
+    def horiz_wall_segment(has_wall, has_door=False, door_char='D'):
+        if not has_wall:
+            return " " * cell_w
+        if has_door:
+            left = cell_w // 2
+            right = cell_w - left - 1
+            return "─" * left + door_char + "─" * right
+        return "─" * cell_w
+
     def cell_text(idx):
         enemies, treasure, feat = room_info[idx]
         e = str(enemies)
@@ -451,116 +482,226 @@ def generate_room_map(size=LABYRINTH_SIZE, seed=None):
         t = t[-1] if len(t) > 1 else t
         return f"{e}{center}{t}"
 
-    # make rooms wider
-    cell_w = 7   # interior width (was 5)
-    pad_line = " " * cell_w
-    def pad_with(text):
-        return text.center(cell_w)
+    def get_attr(ch, idx, pos_in_mid):
+        base_attr = 0
+        if ch in "┌┐└┘┬┴┼├┤─│":
+            base_attr = curses.color_pair(1)
+        elif ch == 'L':
+            base_attr = curses.color_pair(2)
+        elif ch in 'ESX':
+            base_attr = curses.color_pair(3)
+        elif ch in '0123456789 ':
+            base_attr = curses.color_pair(4)
+        else:
+            base_attr = curses.color_pair(4)
 
-    def horiz_wall_segment(has_wall, has_door=False, door_char='D'):
-        # returns a horizontal segment of length cell_w:
-        # open passage -> spaces, normal wall -> '─'*cell_w, door -> centered door_char with '─' around
-        if not has_wall:
-            return " " * cell_w
-        if has_door:
-            left = cell_w // 2
-            right = cell_w - left - 1
-            return "─" * left + door_char + "─" * right
-        return "─" * cell_w
+        # highlights
+        if pos_in_mid == 3:  # treasure position
+            if idx == player_pos and (selected != 'player' or blink_state):
+                base_attr = curses.color_pair(5)
+        if pos_in_mid == 2:  # center
+            if idx in blue_highlights:
+                base_attr = curses.color_pair(6)
+            if idx == boss_pos and (selected != 'boss' or blink_state):
+                base_attr = curses.color_pair(7)
 
-    # top border (wider cells) - color baseline
-    top_border = "┌" + (("─" * cell_w) + "┬") * (size - 1) + ("─" * cell_w) + "┐"
-    print(colorize_str(top_border))
-    for r in range(size):
-        top_parts = []
-        mid_parts = []
-        bot_parts = []
-        for c in range(size):
-            idx = _idx(r, c, size)
-            txt = cell_text(idx)            # 3 chars
-            mid = pad_with(txt)
-            top = pad_line
-            bot = pad_line
+        return base_attr
 
-            lp = loop_pos[r][c]
-            if lp == 'right':
-                mid = mid[:-1] + "L"
-            elif lp == 'left':
-                mid = "L" + mid[1:]
-            elif lp == 'down':
-                bot = bot[:cell_w//2] + "L" + bot[cell_w//2+1:]
-            elif lp == 'up':
-                top = top[:cell_w//2] + "L" + top[cell_w//2+1:]
+    def draw_map():
+        height, width = stdscr.getmaxyx()
+        stdscr.clear()
+        y = 0
+        top_border = "┌" + (("─" * cell_w) + "┬") * (size - 1) + ("─" * cell_w) + "┐"
+        for i, ch in enumerate(top_border):
+            stdscr.addch(y, i, ch, curses.color_pair(1))
+        y += 1
 
-            top_parts.append(top)
-            mid_parts.append(mid)
-            bot_parts.append(bot)
-
-        top_parts_col = [colorize_str(p) for p in top_parts]
-        mid_parts_col = [colorize_str(p) for p in mid_parts]
-        bot_parts_col = [colorize_str(p) for p in bot_parts]
-
-        # top interior line
-        line = ""
-        for c in range(size):
-            if c == 0:
-                line += colorize_str("│")
-            line += top_parts_col[c]
-            if c < size - 1:
-                sep_top = " " if vert_open[r][c] else "│"
-                line += colorize_str(sep_top)
-        line += colorize_str("│")
-        print(line)
- 
-        # middle content line
-        line = ""
-        for c in range(size):
-            if c == 0:
-                line += colorize_str("│")
-            line += mid_parts_col[c]
-            if c < size - 1:
-                if vert_open[r][c]:
-                    sep_mid = " "
-                elif vert[r][c]:
-                    sep_mid = "D"
-                else:
-                    sep_mid = "│"
-                line += colorize_str(sep_mid)
-        line += colorize_str("│")
-        print(line)
-
-        # bottom interior line
-        line = ""
-        for c in range(size):
-            if c == 0:
-                line += colorize_str("│")
-            line += bot_parts_col[c]
-            if c < size - 1:
-                sep_bot = " " if vert_open[r][c] else "│"
-                line += colorize_str(sep_bot)
-        line += colorize_str("│")
-        print(line)
- 
-         # horizontal divider (unless last row)
-        if r < size - 1:
-            sep_line = ""
+        for r in range(size):
+            top_parts = []
+            mid_parts = []
+            bot_parts = []
             for c in range(size):
-                if c == 0:
-                    sep_line += colorize_str("├")
-                 # choose segment: open -> spaces, horiz door -> door centered, else full wall
-                if horiz_open[r][c]:
-                    seg = horiz_wall_segment(False)
-                else:
-                    seg = horiz_wall_segment(True, has_door=bool(horiz[r][c]), door_char='D')
-                sep_line += colorize_str(seg)
+                idx = _idx(r, c, size)
+                txt = cell_text(idx)
+                mid = pad_with(txt)
+                top = pad_line
+                bot = pad_line
+
+                lp = loop_pos[r][c]
+                if lp == 'right':
+                    mid = mid[:-1] + "L"
+                elif lp == 'left':
+                    mid = "L" + mid[1:]
+                elif lp == 'down':
+                    bot = bot[:cell_w//2] + "L" + bot[cell_w//2+1:]
+                elif lp == 'up':
+                    top = top[:cell_w//2] + "L" + top[cell_w//2+1:]
+
+                top_parts.append(top)
+                mid_parts.append(mid)
+                bot_parts.append(bot)
+
+            # top interior line
+            x = 0
+            stdscr.addch(y, x, "│", curses.color_pair(1))
+            x += 1
+            for c in range(size):
+                for p, ch in enumerate(top_parts[c]):
+                    attr = get_attr(ch, _idx(r, c, size), -1)  # not mid
+                    stdscr.addch(y, x, ch, attr)
+                    x += 1
                 if c < size - 1:
-                    sep_line += colorize_str("┼")
-            sep_line += colorize_str("┤")
-            print(sep_line)
-    bottom = "└" + (("─" * cell_w) + "┴") * (size - 1) + ("─" * cell_w) + "┘"
-    print(colorize_str(bottom))
+                    sep = " " if layout['vert_open'][r][c] else "│"
+                    stdscr.addch(y, x, sep, curses.color_pair(1))
+                    x += 1
+            stdscr.addch(y, x, "│", curses.color_pair(1))
+            y += 1
+
+            # middle content line
+            x = 0
+            stdscr.addch(y, x, "│", curses.color_pair(1))
+            x += 1
+            for c in range(size):
+                idx = _idx(r, c, size)
+                for p, ch in enumerate(mid_parts[c]):
+                    attr = get_attr(ch, idx, p)
+                    stdscr.addch(y, x, ch, attr)
+                    x += 1
+                if c < size - 1:
+                    if layout['vert_open'][r][c]:
+                        sep = " "
+                    elif layout['vert'][r][c]:
+                        sep = "D"
+                    else:
+                        sep = "│"
+                    stdscr.addch(y, x, sep, curses.color_pair(1))
+                    x += 1
+            stdscr.addch(y, x, "│", curses.color_pair(1))
+            y += 1
+
+            # bottom interior line
+            x = 0
+            stdscr.addch(y, x, "│", curses.color_pair(1))
+            x += 1
+            for c in range(size):
+                for p, ch in enumerate(bot_parts[c]):
+                    attr = get_attr(ch, _idx(r, c, size), -1)
+                    stdscr.addch(y, x, ch, attr)
+                    x += 1
+                if c < size - 1:
+                    sep = " " if layout['vert_open'][r][c] else "│"
+                    stdscr.addch(y, x, sep, curses.color_pair(1))
+                    x += 1
+            stdscr.addch(y, x, "│", curses.color_pair(1))
+            y += 1
+
+            # horizontal divider
+            if r < size - 1:
+                x = 0
+                stdscr.addch(y, x, "├", curses.color_pair(1))
+                x += 1
+                for c in range(size):
+                    seg = horiz_wall_segment(not layout['horiz_open'][r][c], bool(layout['horiz'][r][c]), 'D')
+                    for ch in seg:
+                        attr = curses.color_pair(1) if ch in "─D" else 0
+                        stdscr.addch(y, x, ch, attr)
+                        x += 1
+                    if c < size - 1:
+                        stdscr.addch(y, x, "┼", curses.color_pair(1))
+                        x += 1
+                stdscr.addch(y, x, "┤", curses.color_pair(1))
+                y += 1
+
+        bottom = "└" + (("─" * cell_w) + "┴") * (size - 1) + ("─" * cell_w) + "┘"
+        for i, ch in enumerate(bottom):
+            stdscr.addch(y, i, ch, curses.color_pair(1))
+        y += 1
+
+        # key
+        key_lines = [
+            "E: Dead End (boss start)",
+            "S: Sealed Entrance (player start)",
+            "X: Exit",
+            "Numbers: Enemies/Treasures",
+            "D: Door  L: Loop Marker",
+            "Yellow center: Players",
+            "Red enemy #: Boss",
+            "Blue center: Visited w/ enemies",
+            "Tab: Switch  Arrows: Move",
+            "T: -Treasure  E: -Enemy  Q: Quit"
+        ]
+        key_x = size * (cell_w + 1) + 3
+        key_y = 1
+        for i, line in enumerate(key_lines):
+            if key_y + i < height:
+                stdscr.addstr(key_y + i, key_x, line)
+
+        stdscr.refresh()
+
+    stdscr.timeout(500)
+    while True:
+        draw_map()
+        key = stdscr.getch()
+        if key == -1:
+            blink_state = not blink_state
+            continue
+        elif key == ord('q') or key == ord('Q'):
+            break
+        elif key == 9:  # tab
+            selected = 'boss' if selected == 'player' else 'player'
+        elif key in (curses.KEY_UP, curses.KEY_DOWN, curses.KEY_LEFT, curses.KEY_RIGHT):
+            current_pos = player_pos if selected == 'player' else boss_pos
+            r, c = _rc(current_pos, size)
+            direction_map = {curses.KEY_UP: 'up', curses.KEY_DOWN: 'down', curses.KEY_LEFT: 'left', curses.KEY_RIGHT: 'right'}
+            direction = direction_map.get(key)
+            
+            # Check for loop door first
+            if loop_pos[r][c] == direction and current_pos in loop_marker_to_target:
+                target = loop_marker_to_target[current_pos]
+            else:
+                # Try normal movement
+                if key == curses.KEY_UP:
+                    nr, nc = r - 1, c
+                elif key == curses.KEY_DOWN:
+                    nr, nc = r + 1, c
+                elif key == curses.KEY_LEFT:
+                    nr, nc = r, c - 1
+                elif key == curses.KEY_RIGHT:
+                    nr, nc = r, c + 1
+                
+                if 0 <= nr < size and 0 <= nc < size:
+                    next_idx = _idx(nr, nc, size)
+                    edge = tuple(sorted([current_pos, next_idx]))
+                    if edge in edges:
+                        target = next_idx
+                    else:
+                        target = None
+                else:
+                    target = None
+            
+            if target is not None:
+                if selected == 'player':
+                    enemies = room_info[player_pos][0]
+                    if enemies > 0:
+                        blue_highlights.add(player_pos)
+                    else:
+                        blue_highlights.discard(player_pos)
+                    player_pos = target
+                else:
+                    boss_pos = target
+                    if target in blue_highlights:
+                        blue_highlights.remove(target)
+        elif key in (ord('t'), ord('T')):
+            current_pos = player_pos if selected == 'player' else boss_pos
+            e, t, f = room_info[current_pos]
+            room_info[current_pos] = (e, max(0, t - 1), f)
+        elif key in (ord('e'), ord('E')):
+            current_pos = player_pos if selected == 'player' else boss_pos
+            e, t, f = room_info[current_pos]
+            room_info[current_pos] = (max(0, e - 1), t, f)
 
 if __name__ == "__main__":
-    generate_room_map(LABYRINTH_SIZE)
+    layout = generate_room_map(LABYRINTH_SIZE)
+    curses.wrapper(interactive_map, layout, LABYRINTH_SIZE)
 
 
