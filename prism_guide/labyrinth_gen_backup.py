@@ -1,3 +1,55 @@
+###
+# 
+# Wall features can only be on an internal wall, except Loop doors which can be on an external wall or internal wall.
+# '─': regular wall, horizontal
+# '│': regular wall, vertical
+# ' ': open passage, if this is a horizontal wall then it is '   '
+# 'L': loop door, if this is a horizontal wall then it is '─L─'
+# 'D': normal door, if this is a horizontal wall then it is '─D─'
+
+# These doors will be represented in the center of the cell. If a cell has one of these then it has one normal door.
+# They are represented in the center of a cell, as seen above.
+# E: dead end
+# S: Sealed entrance
+# X: exit
+
+# First number in cell: enemy count
+# Second number in cell: treasure count
+
+# There will be 2 rooms with 1 loop door and one normal door.
+# There will be one room with a dead end and one normal door.
+# There will be one room with a sealed entrance and one normal door.
+# There will be one room with an exit and one normal door.
+# There will be 10 rooms with three normal doors.
+# There will be 21 rooms with two normal doors.
+# Any room with only normal doors may have an open passage instead of a door and there will be a total of 8 open passages.
+
+# Enemies and treasure in rooms is randomly generated.
+# There are no enemies in the dead end, sealed entrance, or exit rooms.
+# There is a 10% chance of treasure in the sealed entrance or exit rooms.
+# There is a 100% chance of treasure in the dead end room.
+# Each other room will have a 5% chance of treasure.
+# Enemies in the other rooms is randomly generated as though dice are rolled:
+# If the room has an open passage, 3d4 - 10 enemies (minimum 0).
+# Otherwise 3d4 - 8 enemies (minimum 0).
+
+# Example room map:
+# ┌───┬───┬───┬───┬───┬───┐
+# L0 0│0 0│0 0│0 0D0S0│0 0│
+# ├───┼───┼───┼─D─┼───┼───┤
+# │0 0│0 0│0 0D0 0D0 0│0 0│
+# ├───┼───┼   ┼───┼───┼───┤
+# │0 0│0 0│0 0 0 0D0 0│0 0│
+# ├───┼───┼───┼─D─┼───┼───┤
+# │0 0│0 0│0 0│0 0│0X0D0 0│
+# ├───┼───┼───┼───┼───┼   ┤
+# │0E0D0 0│0 0│0 0│0 0│0 0│
+# ├───┼   ┼───┼─D─┼───┼─L─┤
+# │0 0D0 0│0 0│0 0│0 0│0 0│
+# └───┴───┴───┴───┴───┴───┘
+
+### Generated code :)
+
 import random
 
 LABYRINTH_SIZE = 6
