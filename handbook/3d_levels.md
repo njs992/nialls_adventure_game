@@ -9,7 +9,7 @@ Leveling in Niall's Adventure Game is simple and consistent, provides relatively
 The following list is executed at each level up. The order of operation is as listed. Levelling up takes place only at the beginning of a game. Upon level up:
 
 - +1 to any statistic.
-- +1 action point.
+- +1 Might.
 - Add < skill bonuses total > max health points.
 - Check Saturation level-up condition.
 - Add class power from class tree.
