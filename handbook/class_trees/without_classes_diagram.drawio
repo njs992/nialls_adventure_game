@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
   <diagram name="Page-1" id="D5ZlePjZa6OipQFE7GvX">
-    <mxGraphModel dx="836" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="832" dy="1193" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -112,7 +112,7 @@
             <mxPoint x="410" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-134" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-134" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Bottled Atmosphere" vertex="1">
           <mxGeometry height="60" width="120" x="90" y="800" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-135" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Gain Follower,&lt;div&gt;Cultist&lt;/div&gt;" vertex="1">
@@ -139,7 +139,7 @@
         <mxCell id="I4dze5Kj3iRMjBi24ma9-140" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Puncture" vertex="1">
           <mxGeometry height="60" width="120" x="90" y="960" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-141" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Bird&#39;s Eye" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-141" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="880" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-142" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Combat Shot" vertex="1">
@@ -216,7 +216,7 @@
         <mxCell id="I4dze5Kj3iRMjBi24ma9-164" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Folksong" vertex="1">
           <mxGeometry height="60" width="120" x="410" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-165" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Healing Rain" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-165" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Communal Healing" vertex="1">
           <mxGeometry height="60" width="120" x="570" y="560" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-167" edge="1" parent="1" source="I4dze5Kj3iRMjBi24ma9-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;curved=1;sketch=1;curveFitting=1;jiggle=2;" target="I4dze5Kj3iRMjBi24ma9-171">
@@ -251,7 +251,7 @@
             <mxPoint x="730" y="990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-176" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-176" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Adept Track" vertex="1">
           <mxGeometry height="60" width="120" x="410" y="960" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-177" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Bird&#39;s Eye" vertex="1">
@@ -269,7 +269,7 @@
         <mxCell id="I4dze5Kj3iRMjBi24ma9-181" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;sketch=1;curveFitting=1;jiggle=2;" value="" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-182" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Rare Growth" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-182" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Healing Rain" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="480" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-183" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
@@ -278,25 +278,25 @@
         <mxCell id="I4dze5Kj3iRMjBi24ma9-184" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Voice on the Wind" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="800" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-185" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-185" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Critical Eye" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="960" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-187" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Verdana;fontSize=38;sketch=1;curveFitting=1;jiggle=2;" value="Without Classes" vertex="1">
           <mxGeometry height="60" width="330" x="305" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-188" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Spirit Beast" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-188" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Pack Hunt" vertex="1">
           <mxGeometry height="60" width="120" x="90" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-189" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Contain" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-189" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Shepard&#39;s Crook" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-190" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Animal Familiar" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-190" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Animal Familiar: Agent" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-191" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Pack Mentality" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-191" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Spirit Beast" vertex="1">
           <mxGeometry height="60" width="120" x="410" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-192" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-192" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Contain" vertex="1">
           <mxGeometry height="60" width="120" x="570" y="80" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-193" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fillStyle=auto;glass=0;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Radical" vertex="1">
@@ -305,19 +305,19 @@
         <mxCell id="I4dze5Kj3iRMjBi24ma9-194" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Animal Form" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-195" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-195" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Animal Familiar: Sidekick" vertex="1">
           <mxGeometry height="60" width="120" x="570" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-196" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-196" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Self-Sustaining" vertex="1">
           <mxGeometry height="60" width="120" x="410" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-197" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-197" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Survivalship" vertex="1">
           <mxGeometry height="60" width="120" x="90" y="320" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-198" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
           <mxGeometry height="60" width="120" x="730" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="I4dze5Kj3iRMjBi24ma9-199" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="" vertex="1">
+        <mxCell id="I4dze5Kj3iRMjBi24ma9-199" parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;fontStyle=1" value="Mass Poison" vertex="1">
           <mxGeometry height="60" width="120" x="570" y="400" as="geometry" />
         </mxCell>
         <mxCell id="I4dze5Kj3iRMjBi24ma9-201" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=14;fontStyle=1" value="Shaman&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;H-C-A-P&lt;/span&gt;&lt;/div&gt;" vertex="1">
