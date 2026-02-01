@@ -1,0 +1,304 @@
+{
+    "weapons": [
+        {
+            "name": "Unarmed",
+            "handedness": "N/A",
+            "baseDamage": "1, (1 to POW)*; non-lethal",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll",
+            "criticalFail": "Maimed contextually",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Brass Knuckles",
+            "handedness": "N/A",
+            "baseDamage": "1d2, (1 to POW) + 1*; non-lethal",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll, Slowed",
+            "criticalFail": "Maimed contextually",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Gauntlet",
+            "handedness": "N/A",
+            "baseDamage": "1d3, (1 to POW) + 2*",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll, Slowed, Stunned",
+            "criticalFail": "Maimed contextually",
+            "usePenalty": "AGY - 1, DEF + 1"
+        },
+        {
+            "name": "Dagger",
+            "handedness": "1H",
+            "baseDamage": "1d4",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Double Damage Range",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Shortsword",
+            "handedness": "1H",
+            "baseDamage": "1d4 + 1",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Double Damage Range, Bleeding",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "AGY - 1"
+        },
+        {
+            "name": "Longsword",
+            "handedness": "1H",
+            "baseDamage": "1d4 + 2",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Double Damage Range, Bleeding, Sore",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "AGY - 2, DEF - 1"
+        },
+        {
+            "name": "Claymore",
+            "handedness": "2H",
+            "baseDamage": "1d4+3",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Double Damage Range, Bleeding, Sore, Prone",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "AGY - 3, DEF - 2"
+        },
+        {
+            "name": "Hatchet",
+            "handedness": "1H",
+            "baseDamage": "1d6",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Bleeding",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "War Axe",
+            "handedness": "2H",
+            "baseDamage": "1d6 + 1",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Bleeding x2",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "AGY - 1, DEF - 1"
+        },
+        {
+            "name": "Great Axe",
+            "handedness": "2H",
+            "baseDamage": "1d6 + 2",
+            "type": "Melee",
+            "range": 2,
+            "criticalEffect": "Bleeding x4",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "AGY - 2, DEF - 2"
+        },
+        {
+            "name": "Staff",
+            "handedness": "1H",
+            "baseDamage": "1d3",
+            "type": "Melee",
+            "range": 2,
+            "criticalEffect": "Double Damage Range",
+            "criticalFail": "Dropped weapon, 50% chance to break weapon",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Spear",
+            "handedness": "2H",
+            "baseDamage": "1d3 + 1",
+            "type": "Melee",
+            "range": 2,
+            "criticalEffect": "Double Damage Range, Hampered",
+            "criticalFail": "Dropped weapon, 50% chance to break weapon",
+            "usePenalty": "POW - 1"
+        },
+        {
+            "name": "Halberd",
+            "handedness": "2H",
+            "baseDamage": "1d3 + 2",
+            "type": "Melee",
+            "range": 2,
+            "criticalEffect": "Double Damage Range, Pinned Down",
+            "criticalFail": "Dropped weapon, 50% chance to break weapon",
+            "usePenalty": "POW - 2, AGY - 1"
+        },
+        {
+            "name": "Shortbow",
+            "handedness": "N/A",
+            "baseDamage": "1d3",
+            "type": "Ranged",
+            "range": "AGY Bonus",
+            "criticalEffect": "Double Damage Range",
+            "criticalFail": "Dropped weapon, hit space in front of target for full damage.",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Recurve Bow",
+            "handedness": "N/A",
+            "baseDamage": "1d3 + 1",
+            "type": "Ranged",
+            "range": "2xAGY Bonus",
+            "criticalEffect": "Double Damage Range, Scared",
+            "criticalFail": "Dropped weapon, hit space in front of target for full damage.",
+            "usePenalty": "DEF - 1"
+        },
+        {
+            "name": "Longbow",
+            "handedness": "N/A",
+            "baseDamage": "1d3 + 2",
+            "type": "Ranged",
+            "range": "3xAGY Bonus",
+            "criticalEffect": "Double Damage Range, Scared, Pinned Down",
+            "criticalFail": "Dropped weapon, hit space in front of target for full damage.",
+            "usePenalty": "DEF - 2, AGY - 1"
+        },
+        {
+            "name": "Dart",
+            "handedness": "N/A",
+            "baseDamage": "(1 to AGY)",
+            "type": "Ranged",
+            "range": "AGY Bonus",
+            "criticalEffect": "Boosted Damage Roll",
+            "criticalFail": "Dropped weapon, hit space in front of target for full damage.",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Thrown Knife",
+            "handedness": "N/A",
+            "baseDamage": "(1 to AGY) + 1",
+            "type": "Ranged",
+            "range": "AGY Bonus",
+            "criticalEffect": "Boosted Damage Roll, Scared",
+            "criticalFail": "Dropped weapon, hit space in front of target for full damage.",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Javelin",
+            "handedness": "N/A",
+            "baseDamage": "(1 to AGY) + 2",
+            "type": "Ranged",
+            "range": "2xAGY Bonus",
+            "criticalEffect": "Boosted Damage Roll, Scared, Pinned Down",
+            "criticalFail": "Dropped weapon, hit space in front of target for full damage.",
+            "usePenalty": "POW - 1, DEF - 1"
+        },
+        {
+            "name": "Club",
+            "handedness": "1H",
+            "baseDamage": "1d4",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Double Damage Range",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Mace",
+            "handedness": "1H",
+            "baseDamage": "1d4 + 1",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Double Damage Range, Slowed",
+            "criticalFail": "Dropped weapon",
+            "usePenalty": "AGY - 1, DEF - 1"
+        },
+        {
+            "name": "Morning Star",
+            "handedness": "1H",
+            "baseDamage": "1d4 + 2",
+            "type": "Melee",
+            "range": 2,
+            "criticalEffect": "Double Damage Range, Slowed, Stunned",
+            "criticalFail": "Self-damage, full damage range.",
+            "usePenalty": "AGY - 2, DEF - 2, SPD - 2"
+        },
+        {
+            "name": "Buckler",
+            "handedness": "1H",
+            "baseDamage": "(1 to POW)*; non-lethal",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll",
+            "criticalFail": "Dropped shield",
+            "usePenalty": "DEF + 1"
+        },
+        {
+            "name": "Shield",
+            "handedness": "1H",
+            "baseDamage": "(1 to POW) + 1*",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll",
+            "criticalFail": "Dropped shield",
+            "usePenalty": "DEF + 2, AGY - 1"
+        },
+        {
+            "name": "Tower Shield",
+            "handedness": "1H",
+            "baseDamage": "(1 to POW) + 2*",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll",
+            "criticalFail": "Dropped shield, cannot re-equip in combat",
+            "usePenalty": "DEF + 3, AGY - 2, POW - 1"
+        },
+        {
+            "name": "Improvised 1H",
+            "handedness": "1H",
+            "baseDamage": "1, (1 to POW)*, GM discretion",
+            "type": "Either",
+            "range": "1; POW Bonus",
+            "criticalEffect": "Dazed",
+            "criticalFail": "Broken item",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Improvised 2H",
+            "handedness": "2H",
+            "baseDamage": "(1 to POW), (1 to POW) + 3, GM discretion",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Dazed + Prone",
+            "criticalFail": "Broken item",
+            "usePenalty": "AGY - 3, DEF - 3"
+        },
+        {
+            "name": "Protector Recurve",
+            "handedness": "N/A",
+            "baseDamage": "1d3 + 1",
+            "type": "Ranged",
+            "range": "2xAGY Bonus",
+            "criticalEffect": "Double Damage Range, Scared",
+            "criticalFail": "Hit space in front of target for full damage, bowstring breaks.",
+            "usePenalty": "Free wield"
+        },
+        {
+            "name": "Long Arm Tower Shield",
+            "handedness": "1H",
+            "baseDamage": "(1 to POW) + 2",
+            "type": "Melee",
+            "range": 1,
+            "criticalEffect": "Boosted Damage Roll",
+            "criticalFail": "Protector falls prone.",
+            "usePenalty": "DEF + 3, POW - 2"
+        },
+        {
+            "name": "Shepard's Crook",
+            "handedness": "1H",
+            "baseDamage": "(1 to POW)",
+            "type": "Melee",
+            "range": 2,
+            "criticalEffect": "Double Damage Range, allows free use of Crook power.",
+            "criticalFail": "Dropped weapon, 50% chance to break weapon",
+            "usePenalty": "Free wield"
+        }
+    ]
+}

@@ -1,0 +1,1124 @@
+{
+    "abilities": [
+        {
+            "name": "Cull",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Slay all targets within melee range who have a remaining life point total lower than the character's Power statistic.",
+            "check": "Power"
+        },
+        {
+            "name": "Lunge",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Move one pace forward, add defense bonus to attack, defense bonus reduced to 0 until next turn.",
+            "check": "Power"
+        },
+        {
+            "name": "Slash",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Divide damage equally across up to 3 targets in front of the character.",
+            "check": "Power"
+        },
+        {
+            "name": "Jab",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Attack that ignores armor.",
+            "check": "Agility"
+        },
+        {
+            "name": "Hack",
+            "type": "Touch",
+            "appliedCondition": "Cracked",
+            "description": "Attack applies Cracked condition.",
+            "check": "Power"
+        },
+        {
+            "name": "Riposte",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Advantaged attack against a target who has failed an attack against the character in the past turn.",
+            "check": "Agility"
+        },
+        {
+            "name": "Stab",
+            "type": "Touch",
+            "appliedCondition": "Bleeding",
+            "description": "Attack which adds condition.",
+            "check": "Power"
+        },
+        {
+            "name": "Overhand Slash",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Attack that benefits from larger weapon. Damage range becomes 2 ^ (Base weapon damage modifier)",
+            "check": "Power"
+        },
+        {
+            "name": "Unsheathe",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Quick attack which can surprise the target.",
+            "check": "Agility"
+        },
+        {
+            "name": "Unsheathe Challenge",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "A successful surprise attack doubles damage range.",
+            "check": "Head-to-head Agility"
+        },
+        {
+            "name": "Pommel Strike",
+            "type": "Touch",
+            "appliedCondition": "Unconscious",
+            "description": "Blunt attack with otherwise lethal weapon. Max damage of 1. Instead of reducing life points to 0, target becomes unconscious.",
+            "check": "Power"
+        },
+        {
+            "name": "Shoulder Charge",
+            "type": "Touch",
+            "appliedCondition": "Down",
+            "description": "Move one pace forward onto an occupied space. Target is pushed back and must succeed an Agility check otherwise fall down.",
+            "check": "Agility Save"
+        },
+        {
+            "name": "Disarm",
+            "type": "Touch",
+            "appliedCondition": "Succeed: Sore condition applied to arm; Succeed by 10: Sore condition applied to arm, cannot be resisted; Succeed by 20: Target receives Maimed Arm injury for targeted arm.",
+            "description": "Quick strike to the wrist.",
+            "check": "Head-to-head Agility"
+        },
+        {
+            "name": "Multi-shot",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Ranged attack that can be used multiple times during a move to attack multiple targets.",
+            "check": "Agility"
+        },
+        {
+            "name": "Pass-through Shot",
+            "type": "Distance",
+            "appliedCondition": "Bleeding, if damage received is greater than 1.",
+            "description": "Pierces targets and applies half damage per pace back in a straight line.",
+            "check": "Power"
+        },
+        {
+            "name": "Clobber",
+            "type": "Touch",
+            "appliedCondition": "Stunned",
+            "description": "Attack applies Stunned condition.",
+            "check": "Power"
+        },
+        {
+            "name": "Sidestep",
+            "type": "Movement",
+            "appliedCondition": "",
+            "description": "Triggers Reflex Attacks targeting the character. On a successful check all attacks against the character automatically miss.",
+            "check": "Agility"
+        },
+        {
+            "name": "Step Up",
+            "type": "N/A",
+            "appliedCondition": "",
+            "description": "Combat movement into melee range of opposing character does not trigger Reflex Attacks",
+            "check": "Command"
+        },
+        {
+            "name": "Whirlwind Strikes",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Spinning attacks with bladed weapon hits all targets in melee range.",
+            "check": "Agility"
+        },
+        {
+            "name": "Gut",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Attack can cause permanent physical injury.",
+            "check": "Power"
+        },
+        {
+            "name": "Combat Shot",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Normal ranged attack on melee range target without triggering free attack.",
+            "check": "Agility"
+        },
+        {
+            "name": "Improvised Assault",
+            "type": "Touch or Distance",
+            "appliedCondition": "",
+            "description": "Enables use of non-weapons for attacks with full damage range.",
+            "check": ""
+        },
+        {
+            "name": "Wound",
+            "type": "Touch",
+            "appliedCondition": "Dazed",
+            "description": "Attack applies Dazed condition.",
+            "check": "Power"
+        },
+        {
+            "name": "Maim",
+            "type": "Touch",
+            "appliedCondition": "Hampered",
+            "description": "Attack applies Hampered condition.",
+            "check": "Power"
+        },
+        {
+            "name": "Jubilant Violence",
+            "type": "Touch",
+            "appliedCondition": "Upon 3 successive hits, Scared",
+            "description": "Take immense pleasure in an all-out attack. Make consecutive attacks against a single target. The first hit deals one damage point, then each successful hit deals one additional damage up until an attack is missed.",
+            "check": "Agility or Power"
+        },
+        {
+            "name": "Form 1",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Take an attacking stance. The next attack move check is rolled as boosted.",
+            "check": "N/A"
+        },
+        {
+            "name": "Form 2",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Deliver a precise attack. Damage is rolled as boosted.",
+            "check": "Agility or Power"
+        },
+        {
+            "name": "Form 3",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Return to a defensive stance. The target of the character's attack rolls attenuated against the character until the next turn of the character. If the 3 Forms are used successfully successively without distraction or disruption, the target is killed outright.",
+            "check": "N/A"
+        },
+        {
+            "name": "All-out Attack",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Add defense statistic to the attack damage range. Character becomes vulnerable until the next turn.",
+            "check": "Power"
+        },
+        {
+            "name": "Puncture",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Attack that ignores armor.",
+            "check": "Agility"
+        },
+        {
+            "name": "Pin Down",
+            "type": "Touch or Distance",
+            "appliedCondition": "Pinned Down",
+            "description": "The target becomes pinned down and cannot move until the condition is overcome.",
+            "check": "Power"
+        },
+        {
+            "name": "Suppress",
+            "type": "Distance",
+            "appliedCondition": "Suppressed",
+            "description": "Suppressing fire holds a target in position.",
+            "check": "Agility"
+        },
+        {
+            "name": "Maul",
+            "type": "Touch",
+            "appliedCondition": "Bleeding, 3 stacks",
+            "description": "Brutal melee attack.",
+            "check": "Power"
+        },
+        {
+            "name": "Poke",
+            "type": "Distance",
+            "appliedCondition": "Bleeding",
+            "description": "Attack applies Bleeding condition.",
+            "check": "Agility"
+        },
+        {
+            "name": "Power Shot",
+            "type": "Distance",
+            "appliedCondition": "Scared",
+            "description": "Attack applies Scared condition.",
+            "check": "Power"
+        },
+        {
+            "name": "Warding Shot",
+            "type": "Distance",
+            "appliedCondition": "Slowed",
+            "description": "Attack applies Slowed condition.",
+            "check": "Agility"
+        },
+        {
+            "name": "Shield Bash",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Shields may now be used as weapons, rather than improvised weapons.",
+            "check": ""
+        },
+        {
+            "name": "Gain Follower",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "When in any common public area, a follower may be attracted.",
+            "check": "Command"
+        },
+        {
+            "name": "Improved Follower",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Followers can now be greater than level 0. During the Gain Follower check, level is determined by how much the check is exceeded by. The level of the follower is selected by the character and may be up to the bonus from the ability check. Total follower levels can not exceed the character's Command modifier.",
+            "check": "N/A"
+        },
+        {
+            "name": "Multitude",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Gain Follower ability may be reused. Follower count can not exceed the character's Command modifier.",
+            "check": "N/A"
+        },
+        {
+            "name": "Blood Slave",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "A Blood Slave is a follower who may be sacrificed to avoid taking damage.",
+            "check": "Command"
+        },
+        {
+            "name": "Stand In",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "The Stand In is a follower who may take the place of the character in any situation. If this is for a player character, the player controls the follower but the play character does not need to be present.",
+            "check": "N/A"
+        },
+        {
+            "name": "Agent",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "An Agent is a follower who may be assigned to handle basic tasks for the character. The task will require ability checks outlined by the GM to be made by the character and the follower.",
+            "check": "Any"
+        },
+        {
+            "name": "Double-agent",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "A Double-agent is a follower who will turn on your opponents at some point during a session. Gaining a Double Agent is handled separately from the Gain Follower ability. Instead, attracting the follower is done blindly. This still counts as part of the total follower and total levels count.",
+            "check": "Command"
+        },
+        {
+            "name": "Gain Magicked Follower",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Magics may be channeled as a follower is attracted. This can result in any type of enchanted follower, as dictated by the character's magical ability.",
+            "check": "Command"
+        },
+        {
+            "name": "Cultists",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Cultists are followers who may be replaced at any point as they fall. The check to attract followers must be re-done, but it can be done from any reasonable location.",
+            "check": "Command"
+        },
+        {
+            "name": "Animal Familiar",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "When nearby to an untamed animal, they may be recruited as an Animal Familiar.",
+            "check": "Command"
+        },
+        {
+            "name": "Shadow Hand",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "A nearby shadow may be recruited for simple, non-physical tasks. The Shadow Hand is treated similarly to an Agent",
+            "check": "Command"
+        },
+        {
+            "name": "Effigy",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Animate an object. With movement and life points assigned by GM discretion, the Effigy becomes a follower who matches the statistics of the character.",
+            "check": "Command"
+        },
+        {
+            "name": "Empower",
+            "type": "Distance",
+            "appliedCondition": "Buffed",
+            "description": "Grant the Buffed condition to up to as many targets as the character's Command modifier. Must exceed check by 2 per additional target.",
+            "check": "Command"
+        },
+        {
+            "name": "Support",
+            "type": "Distance",
+            "appliedCondition": "Sturdy",
+            "description": "Grant the Sturdy condition to up to as many targets as the character's Command modifier. Must exceed check by 2 per additional target.",
+            "check": "Command"
+        },
+        {
+            "name": "Rouse",
+            "type": "Distance",
+            "appliedCondition": "Encouraged",
+            "description": "Grant the Encouraged condition to up to as many targets as the character's Command modifier. Must exceed check by 2 per additional target.",
+            "check": "Command"
+        },
+        {
+            "name": "Hone",
+            "type": "Distance",
+            "appliedCondition": "Quickened",
+            "description": "Grant the Quickened condition to up to as many targets as the character's Command modifier. Must exceed check by 2 per additional target.",
+            "check": "Command"
+        },
+        {
+            "name": "Blood-link",
+            "type": "Distance",
+            "appliedCondition": "Blood-linked",
+            "description": "Blood-link to up to as many targets as the character's Command modifier. While maintaining Blood-link as a positive condition, the casting character takes damage in place of the target. On a successful Heartiness check, treated as head-to-head against the attack, the character takes half damage. Otherwise full damage.",
+            "check": "Heartiness"
+        },
+        {
+            "name": "Hastening Aura",
+            "type": "Aura",
+            "appliedCondition": "Hastened",
+            "description": "All friendly characters within the Hastening Aura receive the effects from the Hastened positive condition. Instead of maintaining the condition, the casting character maintains the aura. Range of the aura is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Hardening Aura",
+            "type": "Aura",
+            "appliedCondition": "Hardened",
+            "description": "All friendly characters within the Hardening Aura receive the effects from the Hardened positive condition. Instead of maintaining the condition, the casting character maintains the aura. Range of the aura is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Shielding Aura",
+            "type": "Aura",
+            "appliedCondition": "Shielded",
+            "description": "All friendly characters within the Shielding Aura receive the effects from the Shielded positive condition. Instead of maintaining the condition, the casting character maintains the aura. Range of the aura is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Sharpen",
+            "type": "Distance",
+            "appliedCondition": "Focused",
+            "description": "Grant the Focused condition to up to as many targets as the character's Command modifier. Must exceed check by 2 per additional target.",
+            "check": "Command"
+        },
+        {
+            "name": "Healing Touch",
+            "type": "Touch",
+            "appliedCondition": "Healing",
+            "description": "Healing Touch is a direct or ranged healing ability. Healing effect is 1 to Heartiness modifier plus Heartiness modifier. From range, the effect is reduced by 1 per stride. Upon a failed direct action, heal for 1 to Heartiness modifier.",
+            "check": "Heartiness"
+        },
+        {
+            "name": "Empowered Resonance Field",
+            "type": "Aura",
+            "appliedCondition": "Enhanced Attunement",
+            "description": "Within the Empowered Resonance Field, the Color domain is stronger in favor of the Attunement of the character. This effect lasts exactly one turn and must be reset using action points each time. Range of the field is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Common Ground Aura",
+            "type": "Aura",
+            "appliedCondition": "Reduced Attunement",
+            "description": "Within the Common Ground Aura, the Color domain is weaker to be in favor of the Attunement of the character. This effect lasts exactly one turn and must be reset using action points each time. Range of the aura is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Ballad",
+            "type": "Song",
+            "appliedCondition": "All stats +1",
+            "description": "For the duration of the encounter directly following a Ballad, all party members and followers receive a +1 bonus to each statistic, potentially improving modifiers, defense, and life point totals.",
+            "check": "Command"
+        },
+        {
+            "name": "Ode",
+            "type": "Song",
+            "appliedCondition": "Stat increase",
+            "description": "For the duration of the encounter directly following an Ode, all party members and followers receive a statistic modifier increase to match the modifier of the hero for whom the Ode is for.",
+            "check": "Command"
+        },
+        {
+            "name": "Warcry",
+            "type": "Song",
+            "appliedCondition": "Speed +2",
+            "description": "For the duration of the encounter directly following a Warcry, all party members and followers gain a bonus of +2 to Speed.",
+            "check": "Command"
+        },
+        {
+            "name": "Folksong",
+            "type": "Song",
+            "appliedCondition": "Doubled healing during rest",
+            "description": "While the party is resting, a Folksong will double all healing effects experienced during the rest.",
+            "check": "Command"
+        },
+        {
+            "name": "Priority Target",
+            "type": "Aura",
+            "appliedCondition": "Boosted rolls against target",
+            "description": "Select a target. As long as Priority Target is maintained as a positive condition, all actions against the target by any friendly character are Boosted.",
+            "check": "Command"
+        },
+        {
+            "name": "Malaise Field",
+            "type": "Aura",
+            "appliedCondition": "Slowed",
+            "description": "All opponent characters within the Malaise Field receive the effects from the Slowed negative condition. Instead of resisting the condition, the casting character maintains the field. Range of the field is the character's command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Toxic Field",
+            "type": "Aura",
+            "appliedCondition": "Poisoned",
+            "description": "All opponent characters within the Toxic Field receive the effects from the Poison negative condition. Instead of resisting the condition, the casting character maintains the field. Range of the field is the character's command modifier.",
+            "check": "Heartiness"
+        },
+        {
+            "name": "Horrifying Aura",
+            "type": "Aura",
+            "appliedCondition": "Scared",
+            "description": "All opponent characters within the Horrifying Aura receive the effects from the Scared negative condition. Instead of resisting the condition, the casting character maintains the aura. Range of the aura is the character's command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Exorcise",
+            "type": "Distance",
+            "appliedCondition": "Radiant Decay, Bloodlust",
+            "description": "Against any undead target, Exorcise applies Radiant Decay and Bloodlust to the target. Both conditions are resisted as one negative condition.",
+            "check": "Command"
+        },
+        {
+            "name": "Absolute Dissonance Field",
+            "type": "Aura",
+            "appliedCondition": "Enhanced Attunement",
+            "description": "Within the Absolute Dissonance Field, the Color domain is stronger against the Attunement of a particular opponent. This effect lasts exactly one turn and must be reset using action points each time. Range of the field is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Additive Dissonance Aura",
+            "type": "Aura",
+            "appliedCondition": "Reduced Attunement",
+            "description": "Within the Additive Dissonance Aura, the Color domain is weaker to be against the Attunement of a particular opponent. This effect lasts exactly one turn and must be reset using action points each time. Range of the aura is the character's Command modifier.",
+            "check": "Command"
+        },
+        {
+            "name": "Decay",
+            "type": "Distance",
+            "appliedCondition": "Decay",
+            "description": "Decay is a direct or ranged anti-healing ability. Damaging effect is 1 to Heartiness modifier plus Heartiness modifier. From range, the effect is reduced by 1 per stride. Upon a failed direct action, damage for 1 to Heartiness modifier.",
+            "check": "Heartiness"
+        },
+        {
+            "name": "Haunting Theme",
+            "type": "Song",
+            "appliedCondition": "Initiative",
+            "description": "For the encounter directly following a Haunting Theme, all opponent characters fall behind the party and followers in the combat order.",
+            "check": "Command"
+        },
+        {
+            "name": "Standard",
+            "type": "Relic",
+            "appliedCondition": "",
+            "description": "A Standard is an inanimate object that can stand in place of the character for aura or field based abilities.",
+            "check": "N/A"
+        },
+        {
+            "name": "Unearth",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Boosted roll for forage-type checks. If there's nothing to find, will be a double forage with gold and food.",
+            "check": "Non-combat, HRT check"
+        },
+        {
+            "name": "Prospect",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "When the situation permits, at GM discretion, the Miner may forage for gold. An appropriate tool is required. A successful find will result in a double roll for gold.",
+            "check": "Non-combat, HRT check"
+        },
+        {
+            "name": "Temper",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "A Miner can temper any bladed weapon. Access to fire and water is requisite. A tempered weapon increases the damage die by 1 level and adds +1 to damage. i.e. if it was 1d4, the tempered weapon would be 1d6+1. Weapon value is doubled. Multi-stage tempering adds Attenuation to the check. Failure destroys the weapon.",
+            "check": "Non-combat, once per game, POW check vs max weapon damage."
+        },
+        {
+            "name": "Preserve",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Cast on a downed target, as long as the caster lives the target cannot be killed",
+            "check": "HRT check"
+        },
+        {
+            "name": "Raise Follower",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Cast on a dead target, raise them from the dead and gain them as a follower. Their health pool is equal to the sum of the caster's ability bonuses. Their ability bonuses may be assigned as -1,0,1, and 2.",
+            "check": "COM check"
+        },
+        {
+            "name": "Target Weakness",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Identify a weakness in a target.",
+            "check": "AGY check vs user-specified stat"
+        },
+        {
+            "name": "Exploit Weakness",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "After using Target Weakness to identify the weakness, all checks by user and allies against that specific stat are Boosted.",
+            "check": "COM check vs same user-identified stat"
+        },
+        {
+            "name": "Destroy",
+            "type": "Touch or Distance",
+            "appliedCondition": "",
+            "description": "After using Exploit Weakness, the user augments an attack. Success treated as critical.",
+            "check": "POW check (Boosted) vs same user-identified stat"
+        },
+        {
+            "name": "Basic Training",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "All wield penalties for weapons are reduced by 1. E.g. the long sword penalty is reduced to AGY ' 1.",
+            "check": "Constant effect"
+        },
+        {
+            "name": "Team Lift",
+            "type": "Non-combat",
+            "appliedCondition": "",
+            "description": "Team Lift allows the party to pool POW bonuses. The user may take a POW check, at GM discretion, using the aggregated bonuses from all willing party members.",
+            "check": "Non-combat"
+        },
+        {
+            "name": "Reflex Block",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "As a Reflex action, a Guardian may add the defense bonus offered by an equipped shield to an adjacent target when that target is attacked.",
+            "check": "No check"
+        },
+        {
+            "name": "Press the Advantage",
+            "type": "Touch or Distance",
+            "appliedCondition": "",
+            "description": "If an attack is against the target's weakest stat, roll double damage on a successful attack.",
+            "check": "No check"
+        },
+        {
+            "name": "Empowered Affirmation",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Counteract the negative condition placed on an ally by applying the opposing positive condition.",
+            "check": "COM check vs affected stat"
+        },
+        {
+            "name": "Team Bonus",
+            "type": "Aura",
+            "appliedCondition": "",
+            "description": "Affects of positive conditions on allies within a field range of COM bonus apply to the user.",
+            "check": "No check"
+        },
+        {
+            "name": "Wild Stamina",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "As a Reflex action, when the Brawler would be taken down by an attack, Wild Stamina may result in healing for the damage instead of receiving it.",
+            "check": "HRT check vs incoming attack roll, one use per game"
+        },
+        {
+            "name": "Endurance Training",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Add the sum of all stat bonuses to the user Life pool. The resulting total may exceed the total Life pool by up to 2xHRT bonus.",
+            "check": "HRT check vs own HRT stat"
+        },
+        {
+            "name": "Drunken Rampage",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Upon receiving the Drunken negative condition, the brawler also is Buffed, Quickened, Sturdy, and Encouraged. While still Drunken, no rolls are made to maintain these conditions and they are all level 3 when Drunken ends.",
+            "check": "Become Drunken, once per game"
+        },
+        {
+            "name": "Bloody Knuckles",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Enables the Brawler to do more unarmed damage.",
+            "check": "No check"
+        },
+        {
+            "name": "Haymaker",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "",
+            "check": ""
+        },
+        {
+            "name": "Cross Fit",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "May use Reflex action to apply a different stat bonus to a combat or other time-based check.",
+            "check": "No check, 3 per game"
+        },
+        {
+            "name": "Dismiss Follower",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "If a target is a follower, the Soothsayer will break the leadership bond immediately.",
+            "check": "COM check vs target's leader"
+        },
+        {
+            "name": "Abuse Loyalty",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Subtle actions against allied targets are Boosted.",
+            "check": "Non-combat"
+        },
+        {
+            "name": "Ease Mind",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "From a range of up to COM bonus, the Soothsayer may take a remote Support check.",
+            "check": "Target negative condition check."
+        },
+        {
+            "name": "Calming Aura",
+            "type": "Aura",
+            "appliedCondition": "",
+            "description": "Aura that causes enemies to lose Might",
+            "check": ""
+        },
+        {
+            "name": "Positive Look",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Apply a standard positive condition to an allied target. May have up to COM bonus positive conditions at any time.",
+            "check": "COM 15 check"
+        },
+        {
+            "name": "Loyal Reputation",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "The first failure of a Subtle skill on a target will not be interpreted as hostile.",
+            "check": "Non-combat"
+        },
+        {
+            "name": "Rapture",
+            "type": "Aura",
+            "appliedCondition": "",
+            "description": "Raise allies, wreck enemies",
+            "check": ""
+        },
+        {
+            "name": "Vampiric Link",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Heal Life points equal to the Life points lost by the target. Maintain the connection as a positive condition.",
+            "check": "HRT condition checks"
+        },
+        {
+            "name": "Sanctum",
+            "type": "Aura",
+            "appliedCondition": "",
+            "description": "Create a field to repel evil. Set a single qualification. All qualified characters within a range of the caster's COM bonus receive (1 to HRT bonus) damage if their turn begins within the Sanctum.",
+            "check": "COM condition checks"
+        },
+        {
+            "name": "Cast Out",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Debuff an enemy target, causing them to lose all positive conditions.",
+            "check": "COM check"
+        },
+        {
+            "name": "Wall",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Create a wall with a range of 2 to your left and right. The line becomes impassable for enemies.",
+            "check": "POW positive condition check"
+        },
+        {
+            "name": "Long Arm",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "The Long Arm Protector is a specialist that uses a modified tower shield with a special recurve bow. This enables melee-range archery and full damage shield attacks with Long Arm Tower Shield.",
+            "check": "No check"
+        },
+        {
+            "name": "Lower Hand",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "The Protector gains a +1 bonus to all checks for every adjacent enemy if no allies are adjacent to the enemy.",
+            "check": "No check"
+        },
+        {
+            "name": "Stand Ground",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "The Protector gains a +1 bonus to all checks for every turn that they have been stationary. Any movement resets the bonus.",
+            "check": "No check"
+        },
+        {
+            "name": "Spirit Beast",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Call upon a Spirit Beast to gain an animal move",
+            "check": ""
+        },
+        {
+            "name": "Animal Familiar: Agent",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Send a creature to do a thing",
+            "check": ""
+        },
+        {
+            "name": "Shepard's Crook",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Use a special staff that can pull targets toward you",
+            "check": ""
+        },
+        {
+            "name": "Pack Hunt",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Advantages per adjacent ally",
+            "check": ""
+        },
+        {
+            "name": "Contain",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Hold enemies to physical location",
+            "check": ""
+        },
+        {
+            "name": "Animal Familiar: Sidekick",
+            "type": "Social",
+            "appliedCondition": "",
+            "description": "Get a creature to fight alongside you",
+            "check": ""
+        },
+        {
+            "name": "Animal Form",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Transform into an animal avatar to gain all abilities and some extra protection",
+            "check": ""
+        },
+        {
+            "name": "Self-Sustaining",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Any negative conditions for the Hermit may now start at level 2.",
+            "check": "No check"
+        },
+        {
+            "name": "Survivalship",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "The Hermit extends any substance aids, adding (1 to HRT) extra effect.",
+            "check": "No check"
+        },
+        {
+            "name": "Personal Aura",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Reduced effect from environments and enemy fields and auras.",
+            "check": ""
+        },
+        {
+            "name": "Infusion",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Combine plants to create potions",
+            "check": "HRT check"
+        },
+        {
+            "name": "Botanist",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Similar to Gain Follower but with specific plants/ingredients.",
+            "check": ""
+        },
+        {
+            "name": "Healing Rain",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "AoE healing",
+            "check": ""
+        },
+        {
+            "name": "Communal Healing",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Improved healing for every healing target",
+            "check": ""
+        },
+        {
+            "name": "Uprising",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Increased power when fighting specific rival",
+            "check": ""
+        },
+        {
+            "name": "Bottled Atmosphere",
+            "type": "Relic",
+            "appliedCondition": "",
+            "description": "Sky Caller has a special container to hold some atmosphere in it, allowing them to call the sky from within enclosed spaces.",
+            "check": ""
+        },
+        {
+            "name": "Enlarge",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Power from the sky increases magic effects.",
+            "check": ""
+        },
+        {
+            "name": "Voice on the Wind",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Increases range of magic",
+            "check": ""
+        },
+        {
+            "name": "Hound's Nose",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Anti stealth and helpful for tracking known targets",
+            "check": ""
+        },
+        {
+            "name": "Bird's Eye",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Increased range for ranged attacks",
+            "check": ""
+        },
+        {
+            "name": "Scavenge",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Able to gain more stuff off felled opponents",
+            "check": ""
+        },
+        {
+            "name": "Critical Eye",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Increased critical ranges",
+            "check": ""
+        },
+        {
+            "name": "Hindsight",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "See into the past, gain an answer about the target's setting and actions from a specified time.",
+            "check": "COM check vs HRT"
+        },
+        {
+            "name": "Unsight",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Inflict Blinded negative condition on target.",
+            "check": "COM check vs COM"
+        },
+        {
+            "name": "Foresight",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Immune to surprise attacks, add HRT bonus to DEF and AGY bonus to FOR.",
+            "check": ""
+        },
+        {
+            "name": "Shortsight",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Give a target a special negative condition. While they are Shortsighted, each action they take in a turn must be for a unique target, including themselves.",
+            "check": "AGY negative condition check"
+        },
+        {
+            "name": "See",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "Gain access to all character information for the target.",
+            "check": "Succeed on all 4 primary stat size-up checks"
+        },
+        {
+            "name": "Insight",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Harder to lie to a character with Insight.",
+            "check": ""
+        },
+        {
+            "name": "Allsight",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Can see through certain walls and objects, nothing can hide in the same room",
+            "check": ""
+        },
+        {
+            "name": "Impose",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "See into the target's mind",
+            "check": ""
+        },
+        {
+            "name": "Impact",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Control the target's mind",
+            "check": ""
+        },
+        {
+            "name": "Implode",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "Destroy the target's mind",
+            "check": ""
+        },
+        {
+            "name": "Examine",
+            "type": "Subtle",
+            "appliedCondition": "",
+            "description": "Reveal the target's inventory as a Subtle action.",
+            "check": "COM check vs AGY"
+        },
+        {
+            "name": "Smoke and Mirrors",
+            "type": "Distance",
+            "appliedCondition": "",
+            "description": "The target or targets (up to AGY bonus targets) are distracted in the manner described by the Cutpurse. Duration is either one turn, contextual, or treated as a negative condition'per GM discretion.",
+            "check": ""
+        },
+        {
+            "name": "Pickpocket",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Enhances the subtle skills 'Pick' and 'Slip'",
+            "check": ""
+        },
+        {
+            "name": "Delayed Strike",
+            "type": "Touch or Distance",
+            "appliedCondition": "",
+            "description": "Making an undetected strike out of combat, the effect will not be noticed until GM discretion gives context.",
+            "check": "AGY check vs COM"
+        },
+        {
+            "name": "Garrote",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "The Cutpurse has a weapon that cannot be taken from them. A successful use of the Garrote is an instant kill, at GM discretion. If the character is undetected at time of use, only the POW check is taken.",
+            "check": "AGY check vs AGY, followed by POW check vs POW."
+        },
+        {
+            "name": "Venom",
+            "type": "Touch or Distance",
+            "appliedCondition": "",
+            "description": "Add poison effect to an attack",
+            "check": ""
+        },
+        {
+            "name": "Knife in the Dark",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "No penalties for dark environments out to AGY range",
+            "check": ""
+        },
+        {
+            "name": "Assassin's Initiative",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "May start combat from any place on the map",
+            "check": ""
+        },
+        {
+            "name": "Enshrouded",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Stealth is attainable after the character has already been spotted. Afterward, if an opponent takes an ability check to find the Enshrouded character, the check is against the character's AGY stat divided by 2.",
+            "check": ""
+        },
+        {
+            "name": "Adept Disguise",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "Disguise self",
+            "check": "CMD check"
+        },
+        {
+            "name": "Unforced Entry",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "May use an AGY check to gain access to a restricted area or container. On a success, no traceable evidence of ingress is created.",
+            "check": ""
+        },
+        {
+            "name": "Smother",
+            "type": "Touch",
+            "appliedCondition": "",
+            "description": "A non-combat attack, the target character must succeed on an HRT, POW, or AGY check of their choice against the Burglar's respective stat. On a fail, the Burglar chooses whether the attack kills or incapacitates.",
+            "check": ""
+        },
+        {
+            "name": "Seek",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Forage checks auto-succeed when the Seeker is looking for a specific, non-common item.",
+            "check": ""
+        },
+        {
+            "name": "Secret Pocket",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "Undetectable inventory space",
+            "check": ""
+        },
+        {
+            "name": "Snake Oil",
+            "type": "Relic",
+            "appliedCondition": "",
+            "description": "The Bootlegger has a special tincture that will help recover from any negative condition. Only works for anyone of the Bootlegger class.",
+            "check": "Add HRT bonus to any negative condition check."
+        },
+        {
+            "name": "Genuine Value",
+            "type": "Self",
+            "appliedCondition": "",
+            "description": "May use AGY bonus in place of COM bonus for any applicable ability check.",
+            "check": ""
+        },
+        {
+            "name": "Grog",
+            "type": "Relic",
+            "appliedCondition": "",
+            "description": "Grog is a convincing concoction. The player can either create or disguise any liquid. The effect felt by the receiver will be falsified benefits of the apparent concoction, but of the real liquid, whether positive, negative, or non-existent.",
+            "check": ""
+        },
+        {
+            "name": "Ace Up the Sleeve",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "At the start of the game, the player rolls a D20 once per AGY bonus. These rolls can be used at any point in the game where a D20 is used. This ability must be used before a die is cast, otherwise the cast die holds.",
+            "check": ""
+        },
+        {
+            "name": "All-in",
+            "type": "Innate",
+            "appliedCondition": "",
+            "description": "For any roll, increase critical ranges by 9.",
+            "check": ""
+        }
+    ]
+}

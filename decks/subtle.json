@@ -1,0 +1,133 @@
+{
+    "subtle": [
+        {
+            "name": "Intimidate",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "POW",
+            "vs": "POW",
+            "description": "Strength versus strength, there's nothing the target can do against you. Disables the target's ability to use subtle skills for the interaction."
+        },
+        {
+            "name": "Exploit",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "POW",
+            "vs": "AGY",
+            "description": "Make the target pay for pulling strings. All Subtle actions are revealed to the character, and for each the character gains a boosted roll against the target."
+        },
+        {
+            "name": "Reverse",
+            "is_prepared": true,
+            "is_hostile": true,
+            "check": "POW",
+            "vs": "HRT",
+            "description": "You were ready for their sneaky ways. Subtle actions against the character are attenuated until one fails, at which point the failure is treated as a success with the target and character swapped."
+        },
+        {
+            "name": "Expose",
+            "is_prepared": true,
+            "is_hostile": true,
+            "check": "POW",
+            "vs": "CMD",
+            "description": "Caught in the act! The next successful Subtle action against the character fails and is made public. All neutral characters are now hostile toward the initial actor, and they may not use Subtle actions for the encounter."
+        },
+        {
+            "name": "Slip",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "AGY",
+            "vs": "POW",
+            "description": "The target can't stop you from planting a small item on them. GM discretion for the check if the item is not small."
+        },
+        {
+            "name": "Pick",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "AGY",
+            "vs": "AGY",
+            "description": "Swiftly and without detection, pull either a known or random item from the target's inventory."
+        },
+        {
+            "name": "Misdirect",
+            "is_prepared": true,
+            "is_hostile": true,
+            "check": "AGY",
+            "vs": "HRT",
+            "description": "A bit of misdirection and you're in the clear. The next successful Subtle action against the character misses."
+        },
+        {
+            "name": "Bluff",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "AGY",
+            "vs": "CMD",
+            "description": "Is telling a lie the best path? Upon success, the target and all allies will believe the bluff unless there is contradictory knowledge beforehand."
+        },
+        {
+            "name": "Resist",
+            "is_prepared": true,
+            "is_hostile": false,
+            "check": "HRT",
+            "vs": "POW",
+            "description": "The friendly target is emboldened to resist incoming Subtle skills. Incoming Subtle skills are attenuated."
+        },
+        {
+            "name": "Abet",
+            "is_prepared": false,
+            "is_hostile": false,
+            "check": "HRT",
+            "vs": "AGY",
+            "description": "You're in on it. Upon a success, the next Subtle action of the target uses the next Subtle die of the character as though the roll was boosted and adds the relevant stat bonus in addition."
+        },
+        {
+            "name": "Guide",
+            "is_prepared": false,
+            "is_hostile": false,
+            "check": "HRT",
+            "vs": "HRT",
+            "description": "Maybe you're just very convincing. Guiding is not perceived as a hostile action, as the target must be making a decision in the first place. Suggest the decision that the target should make."
+        },
+        {
+            "name": "Encourage",
+            "is_prepared": false,
+            "is_hostile": false,
+            "check": "HRT",
+            "vs": "CMD",
+            "description": "Take courage, brother. The target will take it's next Subtle action or Command roll boosted."
+        },
+        {
+            "name": "Bait",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "CMD",
+            "vs": "POW",
+            "description": "Force the target's hand. The target will immediately make a contextually viable Subtle action, at GM discretion."
+        },
+        {
+            "name": "Gaslight",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "CMD",
+            "vs": "AGY",
+            "description": "You only think that because of this… be reasonable! The target's Command rolls are attenuated for the rest of the encounter."
+        },
+        {
+            "name": "Redirect",
+            "is_prepared": true,
+            "is_hostile": true,
+            "check": "CMD",
+            "vs": "HRT",
+            "description": "The next failed Subtle action against the character may be redirected against another target, using the redirect check instead of the original check."
+        },
+        {
+            "name": "Pull",
+            "is_prepared": false,
+            "is_hostile": true,
+            "check": "CMD",
+            "vs": "CMD",
+            "description": "It's always good to have someone on your side. A successful pull will bring a target onto your side, at GM discretion."
+        }
+    ]
+}
+

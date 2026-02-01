@@ -1,12 +1,25 @@
+DEMOGRAPHICS = {
+    "senior":   range(64,95),
+    "middle":   range(32,63),
+    "younger":  range(16,31),
+    "adult":    range(16,63),
+    "older":    range(32,95),
+    "grown":    range(16,95),
+    "child":    range(0,15),
+    "any":      range(0,95)
+}
+
 class Occupation:
-    def __init__( self, name="", per_cap=0, level=0, pow=0, agy=0, hrt=0, cmd=0 ):
+    def __init__( self, name, per_cap, level, pow, agy, hrt, com, demographic="any" ):
         self.name = name
         self.per_cap = per_cap
         self.level = level
         self.pow = pow
         self.agy = agy
         self.hrt = hrt
-        self.cmd = cmd
+        self.com = com
+        self.demographic = demographic
+        assert( demographic in DEMOGRAPHICS.keys() )
     #def
 #class
 
